@@ -1,1 +1,122 @@
-transform: translate(-50%, -50%)
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+
+html {
+    scroll-behavior:smooth;
+}
+nav{
+    z-index:3;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    padding: 1px 2px 3px;
+    justify-content: space-between;
+}
+.cover-page{
+    height: 100vh;
+}
+
+#hk_background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.welcome-text{
+    position:absolute;   
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    left: 50%;
+    top: 40%;
+    color: white;
+    font-family: "Allerta Stencil", "sans-serif";
+    font-size: 55px;
+}
+
+.scroll-text{
+    position:absolute;   
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    left: 50%;
+    top: 75%;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto Mono";
+    font-size: 25px;
+    border: none;
+    background-color: inherit;
+    text-decoration: underline;
+}
+
+
+
+.aboutme-section{
+    width: 100%;
+    background: rgba(91, 91, 93, 0.53);
+    min-height: 100vh;
+    z-index: 1;
+    position:relative;
+} 
+
+.profile-pic{
+    height:auto;
+    width: 30vh;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+}
+
+.subject-text{   
+    transform: translate(-50%, -50%);
+    left: 42%;
+    top: 20%;
+    font-family:"Montserrat Alternates";
+    font-size: 60px;
+    font-weight: 800;
+    border: none;
+    position: absolute;
+    
+}
+
+.aboutme-section p{
+    font-size: 40px;
+    font-family:"Montserrat Alternates";
+    font-weight: 800;
+    top: 30%;
+    left: 30%;
+    width: 100vh;
+    height:auto;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.the-buttons{
+    width:100%;
+    text-align: center;
+    position: absolute;
+    bottom:10%;
+    
+
+
+}
+
+.the-buttons button{   
+    color: rgb(255, 255, 255);
+    font-family: "Roboto Mono";
+    font-size: 25px;
+    border: none;
+    background-color: inherit;
+    text-decoration: underline;  
+    display:inline-block;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
