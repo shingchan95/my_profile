@@ -4,119 +4,271 @@
     box-sizing: border-box;
     color: #fff;
     font-family: "Poppins", sans-serif;
-  }
+}
+
+:root {
+    --main-text: rgb(63, 63, 63);
+    --main-background: rgb(184, 184, 184);
+}
 
 html {
     scroll-behavior:smooth;
 }
-nav{
-    z-index:3;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    padding: 1px 2px 3px;
-    justify-content: space-between;
-}
-.cover-page{
-    height: 100vh;
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
 }
 
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-text{
+    position:absolute;
+    font-family: "Allerta Stencil";
+    font-size: 14px;
+    bottom: 10vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: var(--main-text);
+
+
+}
+  
+
+
 #hk_background{
-    position: absolute;
     width: 100%;
     height: 100vh;
     object-fit: cover;
     z-index: 2;
 }
-
-.welcome-text{
-    position:absolute;   
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    left: 50%;
-    top: 40%;
-    color: white;
-    font-family: "Allerta Stencil", "sans-serif";
-    font-size: 55px;
-}
-
-.scroll-text{
-    position:absolute;   
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    left: 50%;
-    top: 75%;
-    color: rgb(255, 255, 255);
-    font-family: "Roboto Mono";
-    font-size: 25px;
-    border: none;
-    background-color: inherit;
-    text-decoration: underline;
-}
-
-
-
-.aboutme-section{
+.navbar{
+    position: fixed;
+    height:6vh;
     width: 100%;
-    background: rgba(91, 91, 93, 0.53);
-    min-height: 100vh;
-    z-index: 1;
-    position:relative;
-} 
-
-.profile-pic{
-    height:auto;
-    width: 30vh;
-    position: absolute;
-    top: 30%;
-    left: 12%;
+    z-index: 100;
+    background-color: rgb(184, 184, 184);
+    
+}
+.navbar-nav{
+    align-items: center;
+    text-align: end;
+    padding-right: 15px;
 }
 
-.subject-text{   
-    transform: translate(-50%, -50%);
-    left: 42%;
-    top: 20%;
-    font-family:"Montserrat Alternates";
-    font-size: 60px;
-    font-weight: 800;
-    border: none;
-    position: absolute;
+.nav-item{
+    font-size: 18px;
+    font-family:"Allerta Stencil";
+    right:0px;
+}
+.cover-page{
+    position: relative;
+    height: 100;
     
 }
 
-.aboutme-section p{
-    font-size: 40px;
-    font-family:"Montserrat Alternates";
-    font-weight: 800;
-    top: 30%;
-    left: 30%;
-    width: 100vh;
-    height:auto;
+.container-welcome{
     position:absolute;
-    display: flex;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
 }
 
-.the-buttons{
-    width:100%;
-    text-align: center;
+
+.welcome-text{
+    color: rgb(63, 63, 63);
+    font-family: "Allerta Stencil", "sans-serif";
+    font-size: 50px;
+
+}
+.scroll-div{
     position: absolute;
-    bottom:10%;
+    width: auto;
+    height: 100%;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+a.scroll-text{
+
+    background-color: var(--main-background);
+    font-family: "Allerta Stencil";
+    font-size: 25px;
+    color: var(--main-text);
+       
     
 
 
 }
-
-.the-buttons button{   
-    color: rgb(255, 255, 255);
-    font-family: "Roboto Mono";
-    font-size: 25px;
-    border: none;
-    background-color: inherit;
-    text-decoration: underline;  
-    display:inline-block;
-    justify-content: space-between;
-    padding: 0px 40px;
+.home-btn{
+    padding-left: 20px;
+    font-family: "Allerta Stencil";
+    font-size: 18px;
+    color: var(--main-text);
 }
 
+.profile-pic{
+    position: absolute;
+    width: 18vh;
+    height:auto;
+    top: 30vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+.aboutme-section{
+    position:relative;
+    width: 100%;
+    background: white;
+    height: 100vh;
+} 
+
+
+.subject-text{   
+    font-family:"Allerta Stencil";
+    font-size: 30px;
+    color: var(--main-text);
+    text-align: center;
+}
+
+.lead{
+    font-size: 20px;
+    font-family:"Allerta Stencil";
+    width: 90vh;
+    
+    height:auto;
+    color: var(--main-text);
+    text-align: center;
+}
+.jumbotron{
+    height:100vh;
+    position: absolute;
+    /* padding: 500px 0px 0px; */
+    top: 50vh;
+}
+
+.projects-page{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    
+}
+.carousel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.slide{
+    width:640px;
+    height:360px;
+
+}
+.sr-only{
+    color: var(--main-text);
+}
+
+.carousel-caption{
+    color: var(--main-text);
+    background-color: var(--main-background);
+    opacity: 0.8;
+
+    
+}
+
+#MC_background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.4;
+
+}
+
+.projects-page h2{
+    font-family:"Allerta Stencil";
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    z-index: 2;
+    color: var(--main-text);
+}
+
+.projects-img{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 2;
+    margin: auto;
+
+}
+
+.projects-img img {
+    width: 80vh;
+    height: auto;
+    position: absolute;
+    transform: translate(-50%,0);
+}
+   
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 3;
+  }
+
+.next {
+    right: 30%;
+    border-radius: 3px 0 0 3px;
+  }
+.prev {
+    left: 30%;
+    border-radius: 3px 0 0 3px;
+}
+
+.project-img{
+    display: none;
+}
+
+.contact-page {
+    height: 100vh;
+
+}
+
+
+/* @media only screen and (max-width: 768px) {
+    .container-aboutme{
+        position:absolute;
+        width: 200px;
+        height:200px;
+    
+    }
+} */

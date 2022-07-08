@@ -1,22 +1,43 @@
-let controller = new ScrollMagic.Controller()
-let timeline= new TImelineMax()
+var nextBtn= document.querySelector(".next")
+var prevBtn= document.querySelector(".prev")
+var project_img= document.getElementsByClassName("project-img")
 
-// timeline
-// .to("class",5 , {x:500})
-// .to("class",5 , {opactiy: 0}, '-=5');
+project_img[0].style.display="block"
 
-// timeline
-// .fromto("class", {x:500}, {x:300, furation:5}, "-=5")
 
-//https://www.youtube.com/watch?v=Nt70Ld0dJCM&ab_channel=DevEd
-//https://github.com/developedbyed/explore/blob/master/script.js
+nextBtn.addEventListener("click", next_function);
 
-let scene = new ScrollMagic.Scene({
-    triggerElement: "section",
-     duration:"100%",
-     triggerHook:0
+function next_function() {
+    for(var i=0; i<project_img.length-1; i++){
+       if(project_img[project_img.length-1].style.display!=="block" && project_img[i].style.display=="block"){
+            project_img[i].style.display="none"
+            project_img[i+1].style.display="block"
+           return;
+        }if(project_img[project_img.length-1].style.display=="block"){
+            project_img[project_img.length-1].style.display="none"
+            project_img[0].style.display="block"
+            i=0
+            return;
+        }    
+    }
+}
 
-})
-.setTween(timeline)
-.setPin("section")
-.addTo(controller)
+
+prevBtn.addEventListener("click", prev_function);
+
+function prev_function() {
+    for(var i=project_img.length-1; i>0; i--){
+       if(project_img[0].style.display!=="block"&&project_img[i].style.display=="block"){
+            project_img[i].style.display="none"
+            project_img[i-1].style.display="block"
+            return;
+        }
+        if(project_img[0].style.display=="block"){
+            project_img[0].style.display="none"
+            project_img[project_img.length-1].style.display="block"
+            i=project_img.length-1
+            console.log(i)
+            return;
+        }    
+    }
+}
