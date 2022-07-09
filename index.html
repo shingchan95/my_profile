@@ -23,19 +23,21 @@
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <a class="nav-item nav-link home-btn" href="#home">Home</a>
-              <ul class="navbar-nav ms-auto">
+               
+                    <a class="nav-item nav-link home-btn" href="#home">HOME</a>
+               
+                <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#aboutme">About me</a>
+                    <a class="nav-item nav-link" href="#aboutme">ABOUT ME</a>
                 </li>                   
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#projects">Projects</a>
+                    <a class="nav-item nav-link" href="#projects">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="#contact">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="./assets/images/CV.pdf" target="_blank">View My CV</a>
+                    <a class="nav-item nav-link" href="./assets/images/CV.pdf" target="_blank">VIEW MY CV</a>
                 </li>
               </ul>
             </div>
@@ -43,8 +45,10 @@
 
             <div class="cover-page" id="home">  
                 <div class="container-welcome">
-                    <h1 class="welcome-text">Welcome to my profile</h1> 
-                    <a class="arrow-text" href="#aboutme"><i class="arrow down"></i> continue to about me<i class="arrow down"></i> </a>
+                    <h1 class="welcome-text">WELCOME TO MY PROFILE</h1> 
+                    <div class="to-aboutme">
+                        <a class="arrow-text" href="#aboutme"><i class="arrow down"></i> CONTINUE<i class="arrow down"></i> </a>
+                    </div>
                 </div>
                 <img id="hk_background" src="./assets/images/HongKong-background.jpg" alt="hk-background">
             </div>
@@ -64,7 +68,10 @@
                                 Manchester in 2022 March, capable of working with a variety of technology and software, creative team 
                                 player with unique ideas and passionate to contribute in the field.</p>             
                             </div>
-                            <a class="arrow-text mx-auto" href="#projects"><i class="arrow down"></i> continue to project<i class="arrow down"></i> </a>
+                            <div class="to-go">
+                                <a class="arrow-text mx-auto" href="#projects"><i class="arrow down"></i> PROJECT<i class="arrow down"></i> </a>
+                            </div>
+                            
                     </div>
 
                 </div>
@@ -85,29 +92,47 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
+                        
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="./assets/images/project 1.PNG" alt="First slide">
+                            <a href="https://peaceful-lassen-volcanic-80125.herokuapp.com/" target="_blank"><img class="d-block w-100" src="./assets/images/project-bank-heist.JPG" alt="First slide"></a>
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>week1</h5>
-                              </div>
+                                
+                                <div class="git-href">
+                                    <a href="https://github.com/ChrisAylen/project-bank-heist" target="_blank"><img src="./assets/images/github-logo.png" style="max-width: 70px;"></a>
+                                </div>
+                                <h5>Project Bank-Heist<span class="badge badge-secondary">New</span></h5>
+                                <p>This application provides a rudimentary online banking template. It is a full stack application that primarily utilises Node.js and it employs the MVC pattern.</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./assets/images/week4.PNG" alt="Second slide">
+                            <a href="https://week14-coursework.herokuapp.com/" target="_blank"><img class="d-block w-100" src="./assets/images/week14.JPG" alt="Second slide"></a>
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>week4</h5>
-                              </div>
+                                <div class="git-href">
+                                    <a href="https://github.com/shingchan95/week14-coursework" target="_blank"><img src="./assets/images/github-logo.png" style="max-width: 70px;"></a>
+                                </div>
+                                <h5>The Tech Blog</h5>
+                                <p>This application provides a rudimentary Tech Blog template. It is a full stack application that primarily utilises Node.js and it employs the MVC pattern.</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./assets/images/week5.PNG" alt="Third slide">
+                            <a href="https://shingchan95.github.io/know-your-city/" target="_blank"><img class="d-block w-100" src="./assets/images/project 1.PNG" alt="Third slide">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>week3<span class="badge badge-secondary">New</span></h5>
-                              </div>
+                                <div class="git-href">
+                                    <a href="https://github.com/shingchan95/know-your-city" target="_blank"><img src="./assets/images/github-logo.png" style="max-width: 70px;"></a>
+                                </div>
+                                <h5>Weather Forecast With Map Click</h5>
+                                <p>This application provides a Weather Forecast websiite using Google Map API and OpenWeather API. It allows user to click anywhere in the map and allocate the weather forecast detail using the Fetch API .</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./assets/images/week14.JPG" alt="Fourth slide">
+                            <a href="https://shingchan95.github.io/week5-coursework/" target="_blank"><img class="d-block w-100" src="./assets/images/week5.PNG" alt="Fourth slide"></a>
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>week2</h5>
-                              </div>
+                                <div class="git-href">
+                                    <a href="https://github.com/shingchan95/week5-coursework" target="_blank"><img src="./assets/images/github-logo.png" style="max-width: 70px;"></a>
+                                </div>
+                                <h5>Work Day Scheduler</h5>
+                                <p>This application provides a Work Day Scheduler template. It is a fron-end application that primarily utilises Javascript & Localstorage , allows user to save data to their local storage across browser sessions.</p>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -118,14 +143,25 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-
-
-
-                </div>       
-
-                <div class="contact-page">
-
                 </div>
+                <div class="to-go">
+                    <a class="arrow-text mx-auto" href="#contact"><i class="arrow down"></i> CONTACT<i class="arrow down"></i> </a>
+                </div>
+            </div>       
+
+            <div class="contact-page" id="contact">
+                <div class="cover-background">
+                        <h1 class="contact-me">CONTACT</h1>
+                        <div class="contact-list">
+                                <a href="tel: +4477722222222"><img src="./assets/images/telephone-icon.png" style="max-width: 70px;"></a>
+                                <a href=mailto:shingchan1219@gmail.com><img src="./assets/images/email-icon.png" style="max-width: 70px;"></a> 
+                                <a href="https://github.com/shingchan95" target="_blank"><img src="./assets/images/github-logo.png" style="max-width: 70px;"></a>
+                                <a href="https://www.linkedin.com/in/shing-hei-chan-b74747120/" target="_blank"><img src="./assets/images/Linkedin-Logo-PNG2.png" style="max-width: 70px;"></a>
+                        </div>
+                </div>
+
+
+            </div>
                  
         
         

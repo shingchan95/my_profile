@@ -28,18 +28,15 @@ html {
 }
 
 .arrow-text{
-    position:absolute;
     font-family: "Allerta Stencil";
     font-size: 14px;
-    bottom: 10vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
     color: var(--main-text);
-
-
 }
   
-
+.to-aboutme{
+    padding-top: 20vh;
+    text-align: center;
+}
 
 #hk_background{
     width: 100%;
@@ -144,6 +141,7 @@ a.scroll-text{
     text-align: center;
 }
 
+
 .lead{
     font-size: 20px;
     font-family:"Allerta Stencil";
@@ -160,6 +158,19 @@ a.scroll-text{
     top: 50vh;
 }
 
+.to-go{
+    bottom: 10vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    position:absolute;
+    z-index: 10;
+}
+
+
+
+
+
+
 .projects-page{
     position: relative;
     text-align: center;
@@ -168,26 +179,45 @@ a.scroll-text{
 }
 .carousel{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
     z-index: 3;
 }
 .slide{
-    width:640px;
-    height:360px;
+    width:960px;
+    height:540px;
 
 }
 .sr-only{
     color: var(--main-text);
 }
 
-.carousel-caption{
-    color: var(--main-text);
+.git-href{
+    position: absolute;
+    right:10vw;
+
+}
+
+.carousel-caption{    
     background-color: var(--main-background);
     opacity: 0.8;
-
+    bottom:0;
+    height:10vh;
+    width: 100%;
+    left: 0;
+    padding: 12px 20px 12px; 
     
+}
+.carousel-caption h5{
+    color: var(--main-text);
+    font-family:"Allerta Stencil";
+    font-size: 16px;
+}
+.carousel-caption p{
+    color: var(--main-text);
+    font-family:"Allerta Stencil";
+    font-size: 13px;
 }
 
 #MC_background{
@@ -203,30 +233,15 @@ a.scroll-text{
 .projects-page h2{
     font-family:"Allerta Stencil";
     position: absolute;
-    top: 15%;
-    left: 50%;
+    top: 15vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
     font-size: 40px;
     z-index: 2;
     color: var(--main-text);
 }
 
-.projects-img{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    z-index: 2;
-    margin: auto;
 
-}
-
-.projects-img img {
-    width: 80vh;
-    height: auto;
-    position: absolute;
-    transform: translate(-50%,0);
-}
-   
 
 
 .prev, .next {
@@ -260,10 +275,94 @@ a.scroll-text{
 
 .contact-page {
     height: 100vh;
+    position: relative;
+    background-color: var(--main-background)
 
 }
 
+.cover-background{
+    background-color:white;
+    height: 40vh;
+}
 
+.card{
+    position: absolute;
+    background-color: var(--main-background);
+    color: var(--main-text);
+    top:60vh;
+    left:50vw;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 70vh;
+    opacity: 0.8;
+}
+.contact-me{
+    font-family:"Allerta Stencil";
+    position: absolute;
+    top: 25vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    z-index: 2;
+    color: var(--main-text);
+}
+
+.card-header{
+    color: var(--main-text);
+    font-family:"Allerta Stencil";
+    text-align: center;
+    font-size: 18px;
+}
+.card-title{
+    color: var(--main-text);
+    font-family:"Allerta Stencil";
+}
+
+.card-text{
+    color: var(--main-text);
+    font-family:"Allerta Stencil";
+}
+
+.contact-list{
+    color: var(--main-text);
+    font-family:"Allerta Stencil";
+    font-size: 15px;
+}
+
+
+.card-body a{
+    padding: 25px;
+  }
+
+.contact-header{
+    color: var(--main-text);
+    font-family:"Allerta Stencil";
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact-list{
+    position: absolute;
+    bottom:30vh;
+    left: 50vw;
+    list-style-type: none;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+.contact-list a {
+    padding:10%;
+
+}
+
+.contact-list a img {
+    border: 3px solid var(--main-text);
+    padding:5px;
+}
 /* @media only screen and (max-width: 768px) {
     .container-aboutme{
         position:absolute;
