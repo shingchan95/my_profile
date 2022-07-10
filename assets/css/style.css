@@ -282,7 +282,7 @@ a.scroll-text{
 
 .cover-background{
     background-color:white;
-    height: 40vh;
+    height: 28vh;
 }
 
 .card{
@@ -299,7 +299,7 @@ a.scroll-text{
 .contact-me{
     font-family:"Allerta Stencil";
     position: absolute;
-    top: 25vh;
+    top: 18vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     font-size: 40px;
@@ -342,10 +342,17 @@ a.scroll-text{
 }
 .contact-form form input, label, button{
     color: var(--main-text);
+    font-family:"Allerta Stencil";
 }
 
 .contact-form{
-    border: 3px solid var(--main-text);
+
+    width: 50vw;
+    position: absolute;
+    left: 50vw;
+    top:50vh;
+    transform: translate(-50%, -50%);
+
 }
 .contact-list{
     position: absolute;
@@ -360,13 +367,9 @@ a.scroll-text{
     
 }
 
-.contact-list a {
-    padding:10%;
 
-}
 
 .contact-list a img {
-    border: 3px solid var(--main-text);
     padding:5px;
 }
 /* @media only screen and (max-width: 768px) {
