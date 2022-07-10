@@ -340,7 +340,9 @@ a.scroll-text{
     text-align: center;
     font-size: 18px;
 }
-
+.contact-form form input{
+    color: var(--main-text);
+}
 .contact-list{
     position: absolute;
     bottom:30vh;
