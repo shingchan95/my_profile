@@ -63,6 +63,12 @@ html {
     font-family:"Allerta Stencil";
     right:0px;
 }
+.navbar-collapse{
+    background-color: var(--main-background);
+
+}
+
+
 .cover-page{
     position: relative;
     height: 100;
