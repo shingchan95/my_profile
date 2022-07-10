@@ -340,23 +340,39 @@ a.scroll-text{
     text-align: center;
     font-size: 18px;
 }
-.contact-form form input, label, button{
+.contact-form form input, label, button, textarea{
     color: var(--main-text);
     font-family:"Allerta Stencil";
 }
-
+.contact-form label{
+    font-size: 20px;
+    padding:10px
+}
 .contact-form{
 
-    width: 50vw;
+    width: 40vw;
     position: absolute;
     left: 50vw;
-    top:50vh;
+    top:60vh;
     transform: translate(-50%, -50%);
 
 }
+
+.contact-form button{
+    color: var(--main-text);
+    background-color: var(--main-background);
+    padding: 12px 20px;
+
+}
+
+.contact-message{
+    padding-bottom: 15px;
+}
+
+
 .contact-list{
     position: absolute;
-    bottom:30vh;
+    bottom:2vh;
     left: 50vw;
     list-style-type: none;
     margin: auto;
