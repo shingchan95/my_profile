@@ -282,7 +282,7 @@ a.scroll-text{
 
 .cover-background{
     background-color:white;
-    height: 28vh;
+    height: 22vh;
 }
 
 .card{
@@ -299,7 +299,7 @@ a.scroll-text{
 .contact-me{
     font-family:"Allerta Stencil";
     position: absolute;
-    top: 18vh;
+    top: 14vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     font-size: 40px;
