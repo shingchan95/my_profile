@@ -340,8 +340,12 @@ a.scroll-text{
     text-align: center;
     font-size: 18px;
 }
-.contact-form form input{
+.contact-form form input, label, button{
     color: var(--main-text);
+}
+
+.contact-form{
+    border: 3px solid var(--main-text);
 }
 .contact-list{
     position: absolute;
